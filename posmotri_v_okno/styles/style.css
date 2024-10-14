@@ -12,8 +12,6 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -49,6 +47,7 @@ input:focus-visible {
 }
 
 .content {
+  margin: auto;
   display: grid;
   grid-template-columns: 711px 399px;
   gap: 30px;
@@ -113,9 +112,10 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 3px;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -242,7 +242,6 @@ input[type="checkbox"]:checked + span {
   position: relative;
   height: 298px;
   overflow: auto;
-  overflow-x: hidden;
 }
 
 .content__list-item {
@@ -254,6 +253,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__card-link {
+  display: block;
   width: 100%;
   color: #fff;
   text-decoration: none;
@@ -280,10 +280,6 @@ input[type="checkbox"]:checked + span {
 .content__list-item:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: -1px;
-}
-
-.content__list-item:active {
-  background-color: #545050;
 }
 
 .content__video-card {
